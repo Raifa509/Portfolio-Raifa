@@ -1,21 +1,21 @@
 import React from 'react'
-import Themetoggle from '../components/Themetoggle'
+import Background from '../components/Background'
+import Navbar from '../components/Navbar'
 
 
 function Home() {
   return (
-    <div className='min-h-screen'>
-    {/* theme toggle */}
-    <Themetoggle/>
-    {/* background effect */}
+    <div className='min-h-screen relative'>
+      {/* background effect */}
+      <Background />
 
-    {/* navbar */}
+      <div className="relative z-10">
+        {/* navbar */}
+        <Navbar/>
+        {/* main content */}
 
-    {/* main content */}
-
-
-    {/* footer */}
-
+        {/* footer */}
+      </div>
 
 
     </div>
