@@ -4,6 +4,9 @@ import Navbar from '../components/Navbar'
 import LandingPage from '../components/sections/LandingPage'
 import Aboutme from '../components/sections/Aboutme'
 import Skills from '../components/sections/Skills'
+import Projects from '../components/sections/Projects'
+import Experience from '../components/sections/Experience'
+import Education from '../components/sections/Education'
 
 
 function Home() {
@@ -18,6 +21,9 @@ function Home() {
         <LandingPage/>
         <Aboutme/>
         <Skills/>
+        <Projects/>
+        <Experience/>
+        <Education/>
         {/* footer */}
       </div>
 

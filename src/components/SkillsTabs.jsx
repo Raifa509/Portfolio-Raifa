@@ -34,6 +34,8 @@ function SkillsTabs() {
             { title: "Express.js", logo: <SiExpress /> },
             { title: "JWT Authentication", logo: "" },
             { title: "OAuth", logo: "" },
+            { title: "Middleware", logo: "" },
+            { title: "Multer", logo: "" },
         ],
         database: [
             { title: "MongoDB", logo: <SiMongodb /> },
@@ -48,11 +50,11 @@ function SkillsTabs() {
             { title: "Postman", logo: <SiPostman /> },
             { title: "VS Code", logo: <VscVscode /> },
             { title: "Netlify", logo: <SiNetlify /> },
-            { title:  "Render", logo: <SiRender /> },
-             { title:  "Figma", logo: <SiFigma /> },
+            { title: "Render", logo: <SiRender /> },
+            { title: "Figma", logo: <SiFigma /> },
         ],
-        CMS:[
-             { title: "WordPress", logo: <SiWordpress /> },
+        CMS: [
+            { title: "WordPress", logo: <SiWordpress /> },
             { title: "Elementor", logo: <SiElementor /> },
         ]
 
@@ -78,7 +80,7 @@ function SkillsTabs() {
             </div>
 
             {/* content */}
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 w-4xl'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:w-4xl'>
                 {skills[activeTab].map((skill, index) => (
                     <div key={index} className='flex flex-col items-center justify-center gap-2 p-4 border border-button rounded-xl
             hover:scale-105 hover:bg-button hover:text-primary

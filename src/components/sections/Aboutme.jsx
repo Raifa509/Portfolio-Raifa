@@ -43,7 +43,7 @@ function Aboutme() {
                     Hi! I’m Fathimathul Raifa, an MCA graduate and MERN Stack Developer. I build fullstack web applications, craft responsive user interfaces, and enjoy turning ideas into practical digital solutions. I’m always learning new technologies to create impactful experiences.
                 </p>
                 <div>
-                    <h3 className="text-2xl font-semibold mb-5 mt-10 text-heading opacity-90 ">What I Can Do</h3>
+                    <h3 className="text-2xl font-semibold mb-5 mt-10 text-heading opacity-90">What I Can Do</h3>
                     <ul className="flex flex-wrap gap-4">
                         <li className="px-3 py-1 border border-button rounded-md hover:scale-105 transition-all duration-300">MERN Stack Development</li>
                         <li className="px-3 py-1 border border-button rounded-md hover:scale-105 transition-all duration-300">Frontend Development (React , Next.js)</li>
@@ -67,7 +67,7 @@ function Aboutme() {
 
                 {/* logo loop */}
 
-                <div style={{ height: '200px', position: 'relative', overflow: 'hidden' }} className='mt-25 opacity-15'>
+                <div style={{ height: '130px', position: 'relative', overflow: 'hidden' }} className='mt-25 opacity-15'>
                     <LogoLoop
                         logos={techLogos}
                         speed={120}
