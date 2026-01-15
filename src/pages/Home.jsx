@@ -3,6 +3,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import LandingPage from '../components/sections/LandingPage'
 import Aboutme from '../components/sections/Aboutme'
+import Skills from '../components/sections/Skills'
 
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
         {/* main content */}
         <LandingPage/>
         <Aboutme/>
+        <Skills/>
         {/* footer */}
       </div>
 

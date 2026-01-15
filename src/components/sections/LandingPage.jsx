@@ -16,7 +16,7 @@ function LandingPage() {
             <Background />
 
             <div className='flex flex-col md:grid grid-cols-2 items-center justify-center h-screen md:mx-30 relative z-10'>
-                <div className='flex flex-col md:items-start justify-center  mt-15 md:mt-0'>
+                <div className='flex flex-col md:items-start justify-center mt-15 md:mt-0'>
                     <div className='flex items-center justify-center gap-3 py-6'>
                         <span className="relative flex h-3 w-3">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-button opacity-75"></span>
