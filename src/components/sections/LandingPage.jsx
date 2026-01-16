@@ -57,7 +57,7 @@ function LandingPage() {
                             <Button variant="outline" className='bg-button border-transparent cursor-pointer text-primary transition-all duration-300
             hover:shadow-[0_0_30px_rgba(45,212,191,0.8)]'>Download Resume</Button>
                         </a>
-                        <a href=""><Button className='border border-button hover:text-primary hover:bg-button hover:border-transparent cursor-pointer transition-all duration-300
+                        <a href="#projects"><Button className='border border-button hover:text-primary hover:bg-button hover:border-transparent cursor-pointer transition-all duration-300
             '>Explore Projects</Button></a>
                     </div>
                 </div>
