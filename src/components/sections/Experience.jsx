@@ -18,7 +18,7 @@ function Experience() {
                     <div className="space-y-2">
                         <h3 className="flex items-center gap-2 text-lg font-medium text-heading/90">
                             <FiBriefcase className="text-button" />
-                            MERN Stack Developer
+                            MERN Stack Developer Intern
                         </h3>
 
                         <p className="flex items-center gap-2 text-heading/70">
