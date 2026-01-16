@@ -11,7 +11,7 @@ import {
   SiExpress,
   SiNodedotjs
 } from "react-icons/si";
-
+import { motion } from 'framer-motion';
 import LogoLoop from '../LogoLoop';
 
 const techLogos = [
@@ -31,7 +31,10 @@ const techLogos = [
 
 function Aboutme() {
     return (
-        <div className='min-h-screen mt-5  md:mx-30 '>
+        <motion.div  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ amount: 0.1 }}
+  transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-5  md:mx-30 '>
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-0.25 md:w-110 w-25 bg-heading opacity-90'></div>
                 <h1 className='text-3xl font-bold text-heading'>About ME</h1>
@@ -88,7 +91,7 @@ function Aboutme() {
 
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

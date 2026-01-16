@@ -80,7 +80,7 @@ function SkillsTabs() {
             </div>
 
             {/* content */}
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:w-4xl'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:w-4xl mt-5'>
                 {skills[activeTab].map((skill, index) => (
                     <div key={index} className='flex flex-col items-center justify-center gap-2 p-4 border border-button rounded-xl
             hover:scale-105 hover:bg-button hover:text-primary

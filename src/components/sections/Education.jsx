@@ -1,8 +1,12 @@
+import { motion } from 'framer-motion'
 import React from 'react'
 
 function Education() {
     return (
-        <div className='mt-5 md:mx-30 mb-20'>
+        <motion.div initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }} className='mt-5 md:mx-30 mb-20'>
             {/* Heading */}
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-120 w-20 bg-heading opacity-90'></div>
@@ -11,7 +15,10 @@ function Education() {
             </div>
 
             {/* Education Card */}
-            <div className='mx-10 md:mx-30 md:mt-25 mt-15 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
+            <motion.div initial={{ opacity: 0, y: 70 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='mx-10 md:mx-30 md:mt-25 mt-15 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
                 <div className="p-6 rounded-xl bg-card/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
                     {/* Left side: Degree & University */}
                     <div className="flex flex-col gap-1">
@@ -26,24 +33,27 @@ function Education() {
 
                     </div>
                 </div>
-            </div>
-            <div className='mx-10 md:mx-30 mt-10 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
+            </motion.div>
+            <motion.div initial={{ opacity: 0, y: 70 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='mx-10 md:mx-30 mt-10 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
                 <div className="p-6 rounded-xl bg-card/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-                    {/* Left side: Degree & University */}
+                  
                     <div className="flex flex-col gap-1">
                         <h2 className="text-xl font-semibold text-heading/95">Master of Computer Applications (MCA)</h2>
                         <p className="text-heading/80">APJ Abdul Kalam Technological University</p>
                     </div>
 
-                    {/* Right side: Duration & Location */}
+
                     <div className="flex flex-col gap-1 text-heading/70 md:text-right">
                         <p>Aug 2023 - May 2025</p>
                         <p>Kerala, India</p>
                         <p>CGPA: 8.92 / 10</p>
                     </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
 
     )
 }

@@ -10,9 +10,16 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { motion } from "framer-motion"
+
+
+
 function Navbar() {
     return (
-        <div
+        <motion.div
+        initial={{y:-30,opacity:0}}
+        animate={{y:0,opacity:1}}
+        transition={{ duration: 0.6, ease: "easeOut" }}
             className="
         fixed top-4 left-1/2 -translate-x-1/2 w-[90%] z-50
         bg-card/30 dark:bg-card/50 backdrop-blur-md
@@ -39,17 +46,17 @@ function Navbar() {
                         </li>
                     </a>
 
-                    <a href='#home'>
+                    <a href='#skills'>
                         <li className='cursor-pointer hover:text-button hover:scale-110 transition-all duration-300'>
                             Skills
                         </li>
                     </a>
-                    <a href='#home'>
+                    <a href='#projects'>
                         <li className='cursor-pointer hover:text-button hover:scale-110 transition-all duration-300'>
                             Projects
                         </li>
                     </a>
-                    <a href='#home'>
+                    <a href='#contact'>
                         <li className='cursor-pointer hover:text-button hover:scale-110 transition-all duration-300'>
                             Contact
                         </li>
@@ -73,7 +80,7 @@ function Navbar() {
               </div>
                 <Themetoggle />
             </div>
-        </div>
+        </motion.div>
     );
 }
 

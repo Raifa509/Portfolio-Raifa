@@ -6,10 +6,14 @@ import {
     TooltipContent,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { motion } from 'framer-motion'
 
 function Projects() {
     return (
-        <div className='min-h-screen md:mt-10 mt-25  md:mx-30 mx-2'>
+        <motion.div initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen md:mt-10 mt-25  md:mx-30 mx-2' id='projects'>
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-115 w-25 bg-heading opacity-90'></div>
                 <h1 className='text-3xl font-bold text-heading'>Projects</h1>
@@ -19,9 +23,9 @@ function Projects() {
             {/* homeserve */}
             <div className='grid md:grid-cols-4 grid-cols-2 md:mx-30 mt-25 gap-2 md:gap-4'>
                 {/* image */}
-                <div className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center'>
+                <motion.div  transition={{ duration: 0.6, ease: "easeOut" }} whileHover={{ y: -6 }}  className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center'>
                     <img src="/home.png" alt="" />
-                </div>
+                </motion.div>
                 {/* content */}
                 <div className='border border-card p-6 w-full col-span-2 rounded-2xl bg-card/60 hover:border-button transition-all duration-300'>
                     <div className='flex items-center justify-end mb-6 '>
@@ -40,7 +44,7 @@ function Projects() {
                         </Tooltip>
                     </div>
                     <h2 className='text-xl font-medium text-heading/90'>HomeServe - Home services Platform</h2>
-                     <div className='h-0.5  w-45 bg-heading opacity-90 mt-2'></div>
+                    <div className='h-0.5  w-45 bg-heading opacity-90 mt-2'></div>
                     <p className='mt-7 text-justify  text-heading/80'>HomeServe is a MERN-based home services platform with secure JWT authentication, role-based access, and an AI chatbot for automatic user query responses, along with a dynamic admin dashboard.</p>
                     <div className='mt-6 flex gap-2 flex-wrap  text-heading/80'>
 
@@ -73,7 +77,7 @@ function Projects() {
                         </Tooltip>
                     </div>
                     <h2 className='text-xl font-medium text-heading/90'>BookStore – Used Books E-commerce Platform</h2>
-                     <div className='h-0.5  w-45 bg-heading opacity-90 mt-2'></div>
+                    <div className='h-0.5  w-45 bg-heading opacity-90 mt-2'></div>
                     <p className='mt-7 text-justify text-heading opacity-80'>
                         A full-stack used bookstore platform enabling users to buy and sell books with secure authentication, Stripe-powered payments, admin approval workflows, image uploads via Multer, and complete CRUD functionality.
                     </p>
@@ -88,18 +92,18 @@ function Projects() {
                     </div>
                 </div>
                 {/* image */}
-                <div className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center order-1 md:order-2'>
+                <motion.div transition={{ duration: 0.6, ease: "easeOut" }} whileHover={{ y: -6 }} className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center order-1 md:order-2'>
                     <img src="/bookstore.png" alt="" />
-                </div>
+                </motion.div>
 
             </div>
 
             {/* Netflix */}
             <div className='grid md:grid-cols-4 grid-cols-2 md:mx-30 mt-15 gap-4'>
                 {/* image */}
-                <div className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center'>
+                <motion.div transition={{ duration: 0.6, ease: "easeOut" }} whileHover={{ y: -6 }} className='col-span-2 w-full rounded-4xl bg-card/60 flex items-center justify-center'>
                     <img src="/netflix.png" alt="" />
-                </div>
+                </motion.div>
                 {/* content */}
                 <div className='border border-card p-6 w-full col-span-2 rounded-2xl bg-card/60 hover:border-button transition-all duration-300'>
                     <div className='flex items-center justify-end mb-6 '>
@@ -118,7 +122,7 @@ function Projects() {
                         </Tooltip>
                     </div>
                     <h2 className='text-xl font-medium text-heading/90'>Netflix UI Clone</h2>
-                     <div className='h-0.5  w-45 bg-heading opacity-90 mt-2'></div>
+                    <div className='h-0.5  w-30 bg-heading opacity-90 mt-2'></div>
                     <p className='mt-7 text-justify text-heading opacity-80'>
                         A Netflix UI clone developed using HTML and Tailwind CSS, featuring a responsive layout, modern styling, and accurately recreated UI components inspired by the original platform.
                     </p>
@@ -147,9 +151,9 @@ function Projects() {
                         GitHub
                     </a>.
                 </p>
-    
+
             </div>
-        </div>
+        </motion.div>
     )
 }
 

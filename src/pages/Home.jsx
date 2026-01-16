@@ -17,16 +17,21 @@ function Home() {
 
       <div className="relative z-10">
         {/* navbar */}
-        <Navbar/>
+        <Navbar />
         {/* main content */}
-        <LandingPage/>
-        <Aboutme/>
-        <Skills/>
-        <Projects/>
-        <Experience/>
-        <Education/>
-        <Contact/>
+        <LandingPage />
+        <Aboutme />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Education />
+        <Contact />
         {/* footer */}
+        <div className='mt-15 text-center'>
+          <p className="text-heading/60 text-sm my-5">
+            © {new Date().getFullYear()} Raifa. All rights reserved.
+          </p>
+        </div>
       </div>
 
 

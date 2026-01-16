@@ -3,6 +3,7 @@ import SplitText from '../SplitText';
 import TextType from '../TextType';
 import { Button } from "@/components/ui/button"
 import Background from '../Background';
+import { motion } from 'framer-motion';
 
 
 
@@ -12,7 +13,7 @@ function LandingPage() {
     };
     return (
 
-        <div className='relative h-screen'>
+        <div className='relative h-screen' id='home'>
             <Background />
 
             <div className='flex flex-col md:grid grid-cols-2 items-center justify-center h-screen md:mx-30 relative z-10'>
@@ -62,7 +63,10 @@ function LandingPage() {
                 </div>
 
                 {/* image div */}
-                <div className="flex mt-15 md:mt-0 items-center justify-center">
+                <motion.div initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    whileHover={{ y: -6 }} className="flex mt-15 md:mt-0 items-center justify-center">
                     <div className="relative group">
 
                         {/* Outer frame */}
@@ -88,7 +92,7 @@ function LandingPage() {
           "
                         />
                     </div>
-                </div>
+                </motion.div>
 
             </div>
         </div>

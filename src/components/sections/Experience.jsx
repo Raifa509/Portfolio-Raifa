@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react'
 import { FiBriefcase, FiCalendar, FiMapPin } from "react-icons/fi";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
@@ -5,13 +6,19 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 function Experience() {
     return (
-        <div className='min-h-screen mt-5 md:mx-30 '>
+        <motion.div initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-5 md:mx-30 '>
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-115 w-20 bg-heading opacity-90'></div>
                 <h1 className='text-3xl font-bold text-heading'>Experience</h1>
                 <div className='h-px md:w-115 w-20 bg-heading opacity-90'></div>
             </div>
-            <div className='mx-10 md:mx-30 md:mt-25 mt-15 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
+            <motion.div initial={{ opacity: 0, y: 60 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='mx-10 md:mx-30 md:mt-25 mt-15 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
                 <div className="p-6 rounded-xl bg-card/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
 
                     {/* Left */}
@@ -67,8 +74,8 @@ function Experience() {
                     </ul>
                 </div>
 
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 

@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import { toast, ToastContainer } from 'react-toastify'
 import { FaEnvelope, FaLocationDot, FaMapLocationDot, FaWhatsapp } from "react-icons/fa6";
 import { Github, Linkedin, Phone } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 
 
@@ -26,7 +27,10 @@ function Contact() {
     }
 
     return (
-        <div className='min-h-screen mt-35'>
+        <motion.div initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-35' id='contact'>
             {/* heading */}
             <div className='text-center flex flex-col'>
                 <h2 className='md:text-3xl text-2xl font-medium text-heading/60'> Reach Out Anytime</h2>
@@ -35,7 +39,11 @@ function Contact() {
             {/* grid */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 mx-10 md:mx-60 mt-12">
-                <div className='flex flex-col md:items-start items-center md:p-8 mt-10 mb-10 md:mt-15 order-2 md:order-1'>
+                {/* left */}
+                <motion.div initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='flex flex-col md:items-start items-center md:p-8 mt-10 mb-10 md:mt-15 order-2 md:order-1'>
                     <h2 className='text-xl text-heading/70 my-5 '>Let's Connect</h2>
                     <div className="flex items-center gap-3 text-heading/60 hover:text-heading text-lg transition-colors duration-300">
                         <FaLocationDot className="text-button" size={20} />
@@ -76,11 +84,14 @@ function Contact() {
                         </a>
 
                     </div>
-                </div>
+                </motion.div>
 
                 {/* contact form */}
 
-                <div className='flex flex-col border border-button p-8 mt-5 md:mt-15 rounded-2xl order-1 md:order-2'>
+                <motion.div initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ amount: 0.3 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }} className='flex flex-col border border-button p-8 mt-5 md:mt-15 rounded-2xl order-1 md:order-2'>
                     <h3 className='text-center mt-4 mb-8 text-heading/90 text-lg font-medium'>Drop a message</h3>
 
 
@@ -116,7 +127,7 @@ function Contact() {
 
                         <Button type='submit' className='w-full rounded-xl cursor-pointer bg-card/50 hover:bg-button/90 hover:text-primary border border-heading/70 hover:border-heading  mt-5 mb-5'>Submit</Button>
                     </form>
-                </div>
+                </motion.div>
             </div>
             <ToastContainer
                 position="top-right"
@@ -131,7 +142,7 @@ function Contact() {
                 theme="light"
 
             />
-        </div>
+        </motion.div>
     )
 }
 

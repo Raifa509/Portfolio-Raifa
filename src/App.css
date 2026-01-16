@@ -1,7 +1,9 @@
 *{
      font-family: "Fira Code", monospace;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .text-type {
   display: inline-block;
   white-space: pre-wrap;
