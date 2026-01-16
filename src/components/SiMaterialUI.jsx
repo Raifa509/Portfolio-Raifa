@@ -1,6 +1,6 @@
 import React from "react";
 
-const SiMaterialUI = ({ className = "w-8 h-8" }) => (
+const SiMaterialUi = ({ className = "w-8 h-8" }) => (
   <svg
     viewBox="0 0 128 128"
     className={`${className} text-heading transition-colors duration-300 group-hover:text-primary`}
@@ -13,4 +13,4 @@ const SiMaterialUI = ({ className = "w-8 h-8" }) => (
   </svg>
 );
 
-export default SiMaterialUI;
+export default SiMaterialUi;
