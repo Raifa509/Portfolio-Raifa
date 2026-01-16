@@ -4,7 +4,7 @@ import { RiNextjsFill } from 'react-icons/ri';
 import { SiAxios, SiBootstrap, SiCss3, SiElementor, SiExpress, SiFigma, SiGit, SiGithub, SiHtml5, SiJavascript, SiMongodb, SiMongoose, SiMysql, SiNetlify, SiNodedotjs, SiPostman, SiPrisma, SiReact, SiReactrouter, SiRedux, SiRender, SiShadcnui, SiTailwindcss, SiTypescript, SiVercel, SiWordpress } from 'react-icons/si';
 
 import { VscVscode } from 'react-icons/vsc';
-import SiMaterialUI from './SiMaterialUi';
+
 
 
 function SkillsTabs() {
@@ -20,7 +20,6 @@ function SkillsTabs() {
             { title: "Bootstrap", logo: <SiBootstrap /> },
             { title: "CSS3", logo: <SiCss3 /> },
             { title: "Tailwind CSS", logo: <SiTailwindcss /> },
-            { title: "Material UI", logo: <SiMaterialUI /> },
             { title: "Shadcn/ui", logo: <SiShadcnui /> },
             { title: "Redux", logo: <SiRedux /> },
             { title: "Axios", logo: <SiAxios /> },
