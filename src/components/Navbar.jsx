@@ -17,9 +17,9 @@ import { motion } from "framer-motion"
 function Navbar() {
     return (
         <motion.div
-        initial={{y:-30,opacity:0}}
-        animate={{y:0,opacity:1}}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
             className="
         fixed top-4 left-1/2 -translate-x-1/2 w-[90%] z-50
         bg-card/30 dark:bg-card/50 backdrop-blur-md
@@ -64,20 +64,31 @@ function Navbar() {
                 </ul>
             </div>
 
-     
+
 
             <div className='flex gap-4'>
-              <div className='md:hidden flex'>
-                     <DropdownMenu>
-                        <DropdownMenuTrigger><Menu/></DropdownMenuTrigger>
+                <div className='md:hidden flex'>
+                    <DropdownMenu>
+                        <DropdownMenuTrigger>
+                            <Menu />
+                        </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <DropdownMenuItem>Home</DropdownMenuItem>
-                            <DropdownMenuItem>Skills</DropdownMenuItem>
-                            <DropdownMenuItem>Projects</DropdownMenuItem>
-                            <DropdownMenuItem>Contact</DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <a href="#home">Home</a>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <a href="#skills">Skills</a>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <a href="#projects">Projects</a>
+                            </DropdownMenuItem>
+                            <DropdownMenuItem asChild>
+                                <a href="#contact">Contact</a>
+                            </DropdownMenuItem>
                         </DropdownMenuContent>
                     </DropdownMenu>
-              </div>
+
+                </div>
                 <Themetoggle />
             </div>
         </motion.div>
