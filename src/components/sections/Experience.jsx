@@ -19,11 +19,11 @@ function Experience() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ amount: 0.3 }}
                     transition={{ duration: 0.6, ease: "easeOut" }} className='mx-10 md:mx-30 md:mt-25 mt-15 border border-button/90 p-6 rounded-xl flex flex-col space-y-4'>
-                <div className="p-6 rounded-xl bg-card/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div className="p-6 rounded-xl bg-card/60 flex flex-col md:flex-row items-start md:items-center justify-between md:gap-4 gap-2">
 
                     {/* Left */}
-                    <div className="space-y-2">
-                        <h3 className="flex items-center gap-2 text-lg font-medium text-heading/90">
+                    <div className="space-y-1">
+                        <h3 className="flex items-center gap-2 md:text-lg font-medium text-heading/90">
                             <FiBriefcase className="text-button" />
                             MERN Stack Developer Intern
                         </h3>
