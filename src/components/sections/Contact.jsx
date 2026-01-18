@@ -30,7 +30,7 @@ function Contact() {
         <motion.div initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-35' id='contact'>
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-25' id='contact'>
             {/* heading */}
             <div className='text-center flex flex-col'>
                 <h2 className='md:text-3xl text-2xl font-medium text-heading/60'> Reach Out Anytime</h2>

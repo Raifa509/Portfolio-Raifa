@@ -9,7 +9,7 @@ function Experience() {
         <motion.div initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-5 md:mx-30 '>
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen mt-15 md:mx-30 '>
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-115 w-20 bg-heading opacity-90'></div>
                 <h1 className='text-3xl font-bold text-heading'>Experience</h1>

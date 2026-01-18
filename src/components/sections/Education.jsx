@@ -6,7 +6,7 @@ function Education() {
         <motion.div initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }} className='mt-5 md:mx-30 mb-20'>
+            transition={{ duration: 0.6, ease: "easeOut" }} className='mt-20 md:mt-5 md:mx-30 mb-20'>
             {/* Heading */}
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-120 w-20 bg-heading opacity-90'></div>

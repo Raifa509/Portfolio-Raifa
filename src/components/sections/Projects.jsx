@@ -13,7 +13,7 @@ function Projects() {
         <motion.div initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ amount: 0.1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen md:mt-10 mt-25  md:mx-30 mx-2' id='projects'>
+            transition={{ duration: 0.6, ease: "easeOut" }} className='min-h-screen md:mt-5 mt-25  md:mx-30 mx-2' id='projects'>
             <div className='flex items-center justify-center gap-4'>
                 <div className='h-px md:w-115 w-25 bg-heading opacity-90'></div>
                 <h1 className='text-3xl font-bold text-heading'>Projects</h1>
@@ -139,7 +139,7 @@ function Projects() {
 
             </div>
 
-            <div className='flex items-center md:justify-center text-center my-30 '>
+            <div className='flex items-center md:justify-center text-center mt-30 '>
                 <p className="text-heading/50">
                     More projects coming soon. View all projects on{" "}
                     <a
